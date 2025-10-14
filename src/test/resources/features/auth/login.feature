@@ -1,7 +1,7 @@
+@auth
 Feature: Login exitoso
-  @auth
   Scenario: Login correcto con credenciales válidas
-    Given url 'https://backsst.agenciaidp.com/api/v1/auth/login'
+    Given url baseUrl + '/auth/login'
     And request
     """
     {
